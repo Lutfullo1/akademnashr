@@ -4,11 +4,24 @@ body{
     font-family: "Roboto", "Arial", sans-serif;
     letter-spacing: 0.5px;
 }
+*:focus{
+    outline: 2px dotted #ff7500;
+    outline-offset: 3px;
+}
 .site-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
+}
+.logo-link{
+    transition: opacity 0.4s ease;
+}
+.logo-link:hover{
+    opacity: 0.8;
+}
+.logo-link:active{
+    opacity: 0.6;
 }
 .site-heade-actions{
     display: flex;
@@ -27,14 +40,31 @@ body{
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    transition: color 0.4s ease,
+    opacity 0.4s ease;
 }
+.sitenav-link:hover{
+    color: #FF7500;
+}
+.sitenav-link:active{
+    opacity: 0.6;
+}
+
 .main-link{
     font-size: 13px;
     line-height: 15px;
     color: #FFFFFF;
     background-color: #FF7500;
     text-decoration: none;
+    transition: opacity 0.4s ease;
 }
+.main-link:hover{
+    opacity: 0.8;
+}
+.main-link:active{
+    opacity: 0.6;
+}
+
 .hero{
     display: flex;
     justify-content: space-between;
@@ -131,6 +161,15 @@ body{
     display: flex;
     align-items: center;
 }
+.site-footer-socilas a{
+    color: #252420;
+}
+.site-footer-socilas a:hover{
+    color: #FF7500;
+}
+.site-footer-socilas a:active{
+    opacity: 0.6;
+}
 .site-footer-devider{
     height: 2px;
     background: rgba(37, 36, 32, 0.5);
@@ -145,4 +184,10 @@ body{
 .site-footer-links a{
     text-decoration: none;
     color: #252420;
+}
+.site-footer-links a:hover{
+    color: #FF7500;
+}
+.site-footer-links a:active{
+    opacity: 0.6;
 }
